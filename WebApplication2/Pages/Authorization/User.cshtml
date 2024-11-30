@@ -1,0 +1,15 @@
+﻿@page
+@model UserModel
+@{
+}
+
+<h2 class="text-center">Welcome to your Profile</h2>
+@* De tre første er null, da jeg ikke har lavet en register disse værdier  *@
+<div>First Name: @Model.appUser?.FirstName</div>
+<div>Last Name: @Model.appUser?.LastName</div> 
+<div>Address: @Model.appUser?.Address</div>
+
+@* De tre her er værdier som er indtastede for brugeren, da disse værdier kom med som default  *@
+<div>Email: @Model.appUser?.Email</div>
+ <div>Phone: @Model.appUser?.PhoneNumber</div>
+<div>Created At: @Model.appUser?.CreatedAt.ToString("MM/dd/yyyy")</div>
